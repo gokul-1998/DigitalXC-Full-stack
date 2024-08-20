@@ -5,11 +5,14 @@ def load_employees(filepath):
     employees = []
     with open(filepath, mode='r') as file:
         reader = csv.DictReader(file)
-        for row in reader:
-            employees.append({
-                "name": row['Employee_Name'],
-                "email": row['Employee_EmailID']
-            })
+        try:
+            for row in reader:
+                employees.append({
+                    "name": row['Employee_Name'],
+                    "email": row['Employee_EmailID']
+                })
+        except KeyError:
+            raise ValueError("Invalid CSV format.")
     return employees
 
 

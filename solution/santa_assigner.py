@@ -31,5 +31,8 @@ def load_previous_assignments(filepath):
     with open(filepath, mode='r') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            previous_assignments[row['Employee_EmailID']] = row['Secret_Child_EmailID']
+            try:
+                previous_assignments[row['Employee_EmailID']] = row['Secret_Child_EmailID']
+            except KeyError:
+                raise ValueError("Invalid CSV format.")
     return previous_assignments
