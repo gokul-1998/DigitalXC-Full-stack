@@ -15,7 +15,7 @@ This project automates the Secret Santa assignment process for a company. It rea
 ## How to Use
 
 1. **Install dependencies**: 
-    - `pip install -r requirements.txt`
+    - No requirements in this case
 
 
 2. **Run the program**:
@@ -28,8 +28,8 @@ This project automates the Secret Santa assignment process for a company. It rea
 
 ## Input Files
 
-- `employees.csv`: A CSV file containing employee information.
-- `previous_assignments.csv`: A CSV file containing last year's Secret Santa assignments.
+- `Employee-List.csv`: A CSV file containing employee information.
+- `Secret-Santa-Game-Result-2023.csv`: A CSV file containing last year's Secret Santa assignments.
 
 ## Output Files
 
@@ -42,8 +42,8 @@ This project automates the Secret Santa assignment process for a company. It rea
 ## How to Run
 1. Prepare your input files:
 
-    - data/employees.csv: Add the employee details.
-    - data/previous_assignments.csv: Add the previous assignments, if applicable.
+    - data/Employee-List.csv: Add the employee details.
+    - data/Secret-Santa-Game-Result-2023.csv: Add the previous assignments, if applicable.
 
 ## Run the program:
 
